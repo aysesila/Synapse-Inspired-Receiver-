@@ -4,7 +4,7 @@ from scipy.special import erfc
 from scipy.optimize import brentq
 
 
-# global settings
+#  settings
 plt.rcParams.update({
     "font.family": "serif",
     "font.size": 15,
@@ -125,8 +125,8 @@ def optimal_threshold(mu1, mu0, s1, s0):
 analytical = []
 simulated = []
 
-print("\nN   | Analyt. BER | Sim BER | Error %")
-print("----------------------------------------")
+print("\nN  | Analyt. BER | Sim BER | Error %")
+
 
 for N in N_RECEPTORS_LIST:
 
@@ -163,7 +163,7 @@ for N in N_RECEPTORS_LIST:
     print(f"{N:<4}| {ber_a:.5f}    | {ber_mc:.5f} | {err:.2f}")
 
 
-# validation plot
+# plot
 
 plt.figure(figsize=(8,6))
 
